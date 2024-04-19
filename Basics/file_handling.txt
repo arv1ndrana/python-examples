@@ -1,0 +1,1 @@
+Use 'with' when file handling So that you don't have to close the file.
