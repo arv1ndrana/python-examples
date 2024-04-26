@@ -1,11 +1,11 @@
-#!/usr/bin/python
+series = [0, 1, 1]
+N = 10
 
-def fibonacci(terms):
-    num = 1
-    fibonacci_list = [0, 1, 1]
-    for num in range(2, terms + 1):
-        number = (num - 1) + (num + 2)
-        fibonacci_list.append(number)
-    print(fibonacci_list)
+a = series[1]
+b = series[2]
 
-fibonacci(10)
+for i in range(1,N - 2):
+    c = a + b
+    series.append(c)
+    a , b = b , c
+print(series)
