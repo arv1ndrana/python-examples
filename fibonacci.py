@@ -1,11 +1,10 @@
-series = [0, 1, 1]
-N = 10
+def fibonacci(n):
+    a,b = 0,1
+    fibonacci_series = [a,b]
+    for i in range(n - 2):
+        a,b = b, a + b
+        fibonacci_series.append(b)
+    return fibonacci_series
 
-a = series[1]
-b = series[2]
-
-for i in range(1,N - 2):
-    c = a + b
-    series.append(c)
-    a , b = b , c
-print(series)
+result = fibonacci(10)
+print(result)
